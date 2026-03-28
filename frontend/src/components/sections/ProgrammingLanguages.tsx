@@ -3,6 +3,7 @@ import html from "../../assets/html.svg";
 import css from "../../assets/css.svg";
 import java from "../../assets/java.svg";
 import cplusplus from "../../assets/c-plus-plus.svg";
+import Layout from "../Layout/Layout";
 
 const languages = [
   {
@@ -44,17 +45,13 @@ const InfoCard = ({ icon, text }: { icon: any; text: string }) => {
 const ProgrammingLanguages = () => {
   return (
     <>
-      <section className="w-full h-auto p-10 text-primary-text">
-        <div className="flex flex-col w-full gap-20 my-10 items-center">
-          <h3 className="font-bold text-4xl  w-[90%]">Programming Languages</h3>
-          <div className="flex w-[90%] flex-row gap-10 justify-around items-center">
-            {languages.map((l, index) => (
-              <InfoCard key={index} icon={l.src} text={l.alt} />
-            ))}
-          </div>
-          <div className="w-[90%] h-0.5 bg-secondary-text opacity-30 "></div>
+      <Layout title="Programming Languages">
+        <div className="flex w-[90%] flex-row gap-10 justify-around items-center">
+          {languages.map((l, index) => (
+            <InfoCard key={index} icon={l.src} text={l.alt} />
+          ))}
         </div>
-      </section>
+      </Layout>
     </>
   );
 };

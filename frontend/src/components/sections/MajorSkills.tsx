@@ -1,3 +1,5 @@
+import Layout from "../Layout/Layout";
+
 const skills = [
   "Functional Programming",
   "Frontend Development",
@@ -22,17 +24,13 @@ const SkillsList = ({ skill }: { skill: string }) => {
 const MajorSkills = () => {
   return (
     <>
-      <section className="w-full h-auto p-10 text-primary-text">
-        <div className=" flex flex-col gap-20 w-full items-center">
-          <h3 className="font-bold text-4xl  w-[90%]">Major Skills</h3>
-          <div className="flex flex-wrap w-[90%]">
-            {skills.map((s, index) => (
-              <SkillsList key={index} skill={s} />
-            ))}
-          </div>
-          <div className="w-[90%] h-0.5 bg-secondary-text opacity-30 "></div>
+      <Layout title="Major Skills">
+        <div className="flex flex-wrap w-[90%]">
+          {skills.map((s, index) => (
+            <SkillsList key={index} skill={s} />
+          ))}
         </div>
-      </section>
+      </Layout>
     </>
   );
 };
