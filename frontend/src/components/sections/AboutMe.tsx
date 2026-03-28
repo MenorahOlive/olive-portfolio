@@ -15,7 +15,7 @@ const InfoCard = ({ num, text }: { num: string; text: string }) => {
 const AboutMe = () => {
   return (
     <>
-      <section className="w-full h-screen p-10 text-primary-text">
+      <section className="w-full h-auto p-10 text-primary-text">
         <div className="flex flex-col gap-30 justify-center items-center">
           <div className="flex flex-row justify-around items-center gap-20">
             <div className="w-[50%]  flex flex-col gap-10">
