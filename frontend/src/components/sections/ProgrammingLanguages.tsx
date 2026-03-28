@@ -3,12 +3,17 @@ import html from "../../assets/html.svg";
 import css from "../../assets/css.svg";
 import java from "../../assets/java.svg";
 import cplusplus from "../../assets/c-plus-plus.svg";
+import typescript from "../../assets/typescript.svg";
 import Layout from "../Layout/Layout";
 
 const languages = [
   {
     src: javascript,
     alt: "JavaScript (ES6)",
+  },
+  {
+    src: typescript,
+    alt: "TypeScript",
   },
   {
     src: html,
