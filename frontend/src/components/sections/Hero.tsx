@@ -68,42 +68,42 @@ const SkillDot = ({
 const ProfileImage = () => {
   return (
     <>
-      <div className="relative flex items-center justify-center w-[500px] h-[500px] ">
+      <div className="relative flex items-center justify-center w-[500px]   h-[500px] ">
         <div className="absolute w-[100%] h-[100%] border border-black/20 rounded-full  -mt-16">
-          <div className="absolute h-full w-full animate-spin-cw bg-rotate-165 ">
-            <div className="absolute top-1/2 left-0 -translate-x-1/2 ">
+          <div className="absolute h-full w-full animate-spin-cw rotate-90 ">
+            <div className="absolute top-1/4 left-0 -mt-2">
               <SkillDot icon={React} alt="html" colour="bg-pink-500/10" />
             </div>
           </div>
           <div className="absolute h-full w-full animate-spin-cw rotate-0">
-            <div className="absolute top-1/2 left-0 -translate-x-1/2 ">
+            <div className="absolute top-1/3 left-0 -mt-8">
               <SkillDot icon={Html} alt="html" colour="bg-cyan-500/20" />
             </div>
           </div>
         </div>
 
         <div className="absolute w-[75%] h-[75%] border border-black/40 rounded-full   -mt-16 ">
-          <div className="absolute h-full w-full animate-spin-cw rotate-0  ">
-            <div className="absolute top-1/2 left-0 -translate-x-1/2 opacity-100">
+          <div className="absolute h-full w-full animate-spin-cw rotate-90 ">
+            <div className="absolute top-1/4 left-0 -mt-2 opacity-100 rotate-270">
               <SkillDot icon={CSS} alt="html" colour="bg-pink-500/20" />
             </div>
             {/*This pink is the only one facing upwards*/}
           </div>
-          <div className="absolute h-full w-full animate-spin-cw  rotate-0">
-            <div className="absolute top-1/2 left-0 -translate-x-1/2 opacity-100">
+          <div className="absolute h-full w-full animate-spin-cw  rotate-270">
+            <div className="absolute top-1/4 left-0 -mt-2 opacity-100 rotate-90">
               <SkillDot icon={nodeJS} alt="html" colour="bg-green-500/20" />
             </div>
           </div>
         </div>
 
         <div className="absolute w-[50%] h-[50%] border border-black/60 rounded-full -mt-16">
-          <div className="absolute h-full w-full animate-spin-cw  rotate-495 ">
-            <div className="absolute top-1/2 left-0 -translate-x-1/2 opacity-100">
+          <div className="absolute h-full w-full animate-spin-cw  rotate-0 ">
+            <div className="absolute top-1/4 left-0 -mt-6 opacity-100">
               <SkillDot icon={JS} alt="html" colour="bg-cyan-500/20" />
             </div>
           </div>
-          <div className="absolute h-full w-full animate-spin-cw rotate-260 ">
-            <div className="absolute top-1/2 left-0 -translate-x-1/2 opacity-100">
+          <div className="absolute h-full w-full animate-spin-cw rotate-180">
+            <div className="absolute top-1/6 left-0 -mt-2 opacity-100">
               <SkillDot icon={git} alt="html" colour="bg-purple-500/20" />
             </div>
           </div>
