@@ -6,6 +6,7 @@ import ProgrammingLanguages from "./components/sections/ProgrammingLanguages";
 import FrontendTechnologies from "./components/sections/FrontendTechnologies";
 import BackendTechnologies from "./components/sections/BackendTechnologies";
 import IDEandTools from "./components/sections/IDEandTools";
+import Projects from "./components/sections/Projects";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
       <FrontendTechnologies />
       <BackendTechnologies />
       <IDEandTools />
+      <Projects />
     </>
   );
 }

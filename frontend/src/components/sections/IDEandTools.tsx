@@ -13,7 +13,7 @@ const InfoBar = ({ text }: { text: string }) => {
 const tools = [
   "VS Code",
   "Figma",
-  "Canva",
+  "Git",
   "ShadCN",
   "React Query",
   "React Hook",
