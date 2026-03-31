@@ -1,28 +1,23 @@
 import Layout from "../Layout/Layout";
-import React from "../../assets/react.svg";
-import Astro from "../../assets/astro.svg";
-import Bootstrap from "../../assets/bootstrap.svg";
-import Vite from "../../assets/vite.svg";
-import Tailwind from "../../assets/tailwind.svg";
-import illustration from "../../assets/illustration.jpeg";
+import Illustration from "../../assets/illustration.jpeg";
+import Mongodb from "../../assets/mongodb.svg";
+import Postgresql from "../../assets/postgresql.svg";
+import Express from "../../assets/express.svg";
+import Nodejs from "../../assets/node-js.svg";
 
 const icons = [
   {
-    src: React,
-    alt: "React",
+    src: Mongodb,
+    alt: "MongoDB",
   },
-  { src: Astro, alt: "Astro" },
+  { src: Postgresql, alt: "Postgresql" },
   {
-    src: Tailwind,
-    alt: "Tailwind",
-  },
-  {
-    src: Bootstrap,
-    alt: "Bootstrap",
+    src: Express,
+    alt: "Express",
   },
   {
-    src: Vite,
-    alt: "Vite",
+    src: Nodejs,
+    alt: "NodeJS",
   },
 ];
 
@@ -43,12 +38,12 @@ const InfoCard = ({ icon, text }: { icon: any; text: string }) => {
 const BackendTechnologies = () => {
   return (
     <>
-      <Layout title="Backend Technologies">
+      <Layout title="Backend & Database Technologies">
         <div className="flex flex-row-reverse justify-around items-center gap-10 w-full">
           {/* <div className="p-10 bg-purple-500/10  border border-purple-500/40 shadow-lg  shadow-fuchsia-100 rounded-full flex justify-center items-center aspect-square w-[30%]"> */}
           <div className=" bg-background-card rounded-full flex justify-center items-center aspect-square w-[30%]  ">
             <img
-              src={illustration}
+              src={Illustration}
               alt="Image of a robot"
               className="w-full h-auto object-cover  rounded-full aspect-square "
             />
