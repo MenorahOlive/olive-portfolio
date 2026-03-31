@@ -1,9 +1,9 @@
 import Layout from "../Layout/Layout";
-import Illustration from "../../assets/illustration.jpeg";
 import Mongodb from "../../assets/mongodb.svg";
 import Postgresql from "../../assets/postgresql.svg";
 import Express from "../../assets/express.svg";
 import Nodejs from "../../assets/node-js.svg";
+import Coding from "../../assets/coding-wallpaper.jpeg";
 
 const icons = [
   {
@@ -43,9 +43,9 @@ const BackendTechnologies = () => {
           {/* <div className="p-10 bg-purple-500/10  border border-purple-500/40 shadow-lg  shadow-fuchsia-100 rounded-full flex justify-center items-center aspect-square w-[30%]"> */}
           <div className=" bg-background-card rounded-full flex justify-center items-center aspect-square w-[30%]  ">
             <img
-              src={Illustration}
+              src={Coding}
               alt="Image of a robot"
-              className="w-full h-auto object-cover  rounded-full aspect-square "
+              className="w-full h-auto object-cover  rounded-full aspect-square  "
             />
           </div>
 

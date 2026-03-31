@@ -5,6 +5,7 @@ import MajorSkills from "./components/sections/MajorSkills";
 import ProgrammingLanguages from "./components/sections/ProgrammingLanguages";
 import FrontendTechnologies from "./components/sections/FrontendTechnologies";
 import BackendTechnologies from "./components/sections/BackendTechnologies";
+import IDEandTools from "./components/sections/IDEandTools";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
       <ProgrammingLanguages />
       <FrontendTechnologies />
       <BackendTechnologies />
+      <IDEandTools />
     </>
   );
 }
