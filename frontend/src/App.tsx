@@ -7,6 +7,7 @@ import FrontendTechnologies from "./components/sections/FrontendTechnologies";
 import BackendTechnologies from "./components/sections/BackendTechnologies";
 import IDEandTools from "./components/sections/IDEandTools";
 import Projects from "./components/sections/Projects";
+import Footer from "./components/sections/Footer";
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
       <BackendTechnologies />
       <IDEandTools />
       <Projects />
+      <Footer />
     </>
   );
 }
