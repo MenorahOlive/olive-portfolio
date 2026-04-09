@@ -6,7 +6,7 @@ import Layout from "../Layout/Layout";
 const ProfessionalExperience = () => {
   return (
     <>
-      <Layout title="Professional Experience">
+      <Layout title="Professional Experience" id="experience">
         <div className="flex flex-row w-full items-center justify-around  pb-10">
           <img
             src={entropy}

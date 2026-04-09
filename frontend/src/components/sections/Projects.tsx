@@ -20,7 +20,7 @@ const InfoCard = ({ text }: { text: string }) => {
 const Projects = () => {
   return (
     <>
-      <Layout title="My Latest Projects">
+      <Layout title="My Latest Projects" id="my-projects">
         <div className="flex flex-wrap items-center justify-center gap-20 w-[90%]">
           {project.map((p, index) => (
             <InfoCard key={index} text={p} />

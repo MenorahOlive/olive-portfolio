@@ -1,12 +1,11 @@
 "use client";
-
 import { zodResolver } from "@hookform/resolvers/zod";
 import { Controller, useForm } from "react-hook-form";
 import { toast } from "sonner";
 import * as z from "zod";
 import { ArrowRight } from "lucide-react";
 import { useState } from "react"; // Added to handle loading state
-
+const FORMSPREE_URL = import.meta.env.VITE_FORMSPREE_URL;
 import { Button } from "@/components/ui/button";
 import {
   Field,
@@ -40,7 +39,7 @@ const Form = () => {
   async function onSubmit(data: z.infer<typeof formSchema>) {
     setIsPending(true);
     try {
-      const response = await fetch("https://formspree.io/f/YOUR_ID", {
+      const response = await fetch(FORMSPREE_URL, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(data),
@@ -54,6 +53,7 @@ const Form = () => {
       }
     } catch (error) {
       toast.error("An error occurred.");
+      console.log(error);
     } finally {
       setIsPending(false);
     }

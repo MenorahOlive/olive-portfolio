@@ -18,7 +18,7 @@ const tools = [
   "React Query",
   "React Hook",
   "Drizzle ORM",
-  "BetaAuth",
+  "BetterAuth",
   "React Router",
   "Render",
   "Netlify",
@@ -29,7 +29,7 @@ const tools = [
 const IDEandTools = () => {
   return (
     <>
-      <Layout title="IDE & Tools">
+      <Layout title="IDE & Tools" id="ide-and-tools">
         <div className="grid grid-cols-3 gap-3 w-[90%]">
           {tools.map((t, index) => {
             const isLast = index === tools.length - 1;

@@ -24,7 +24,7 @@ const SkillsList = ({ skill }: { skill: string }) => {
 const MajorSkills = () => {
   return (
     <>
-      <Layout title="Major Skills">
+      <Layout title="Major Skills" id="skills">
         <div className="flex flex-wrap w-[90%]">
           {skills.map((s, index) => (
             <SkillsList key={index} skill={s} />

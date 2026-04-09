@@ -12,6 +12,7 @@ import git from "../../assets/git.svg";
 import React from "../../assets/react.svg";
 import { Button } from "@/components/ui/button";
 import { Download } from "lucide-react";
+import NavMenu from "./NavMenu";
 
 const icons = [
   {
@@ -126,15 +127,8 @@ const Hero = () => {
     <>
       <section className="w-full h-screen text-primary-text">
         <nav className="flex flex-row justify-between  p-10">
-          <div className="flex flex-row gap-5 ">
-            <p className="text-2xl cursor-pointer hover:underline hover:scale-105 hover:text-gray-600 transition duration-300 ease-in-out">
-              Home
-            </p>
-            <p className="text-2xl cursor-pointer hover:underline  hover:scale-105 hover:text-gray-600 transition duration-300 ease-in-out">
-              Contact
-            </p>
-          </div>
-          <h2 className="font-bold text-4xl">Olive Menorah</h2>
+          <NavMenu />
+
           <div className="flex flex-row gap-3">
             {icons.map((i) => (
               <SocialIcons key={i.alt} icon={i.src} alt={i.alt} />

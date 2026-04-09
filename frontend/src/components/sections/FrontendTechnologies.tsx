@@ -43,7 +43,7 @@ const InfoCard = ({ icon, text }: { icon: any; text: string }) => {
 const FrontendTechnologies = () => {
   return (
     <>
-      <Layout title="Frontend Technologies">
+      <Layout title="Frontend Technologies" id="frontend-technologies">
         <div className="flex flex-row justify-around items-center gap-10 w-full">
           {/* <div className="p-10 bg-purple-500/10  border border-purple-500/40 shadow-lg  shadow-fuchsia-100 rounded-full flex justify-center items-center aspect-square w-[30%]"> */}
           <div className="p-10 bg-background-card rounded-full flex justify-center items-center aspect-square w-[25%] relative ">
