@@ -1,3 +1,4 @@
+import NavBar from "./components/sections/NavBar";
 import Hero from "./components/sections/Hero";
 import AboutMe from "./components/sections/AboutMe";
 import ProfessionalExperience from "./components/sections/ProfessionalExperience";
@@ -12,6 +13,7 @@ import Footer from "./components/sections/Footer";
 function App() {
   return (
     <>
+      <NavBar />
       <Hero />
       <AboutMe />
       <ProfessionalExperience />

@@ -1,7 +1,3 @@
-import Email from "../../assets/Email.png";
-import GitHub from "../../assets/GitHub.png";
-import Phone from "../../assets/Phone.png";
-import LinkedIn from "../../assets/LinkedIn.png";
 import Profile from "../../assets/profile-img.png";
 import Emoji from "../../assets/emoji.png";
 import Html from "../../assets/html.svg";
@@ -12,38 +8,6 @@ import git from "../../assets/git.svg";
 import React from "../../assets/react.svg";
 import { Button } from "@/components/ui/button";
 import { Download } from "lucide-react";
-import NavMenu from "./NavMenu";
-
-const icons = [
-  {
-    src: LinkedIn,
-    alt: "LinkedIn Icon",
-  },
-  {
-    src: GitHub,
-    alt: "Github Icon",
-  },
-  {
-    src: Phone,
-    alt: "Phone Icon",
-  },
-  {
-    src: Email,
-    alt: "Mail Icon",
-  },
-];
-
-const SocialIcons = ({ icon, alt }: { icon: any; alt: string }) => {
-  return (
-    <>
-      <img
-        src={icon}
-        alt={alt}
-        className="w-auto h-auto object-contain cursor-pointer hover:scale-105 hover:opacity-70 transition duration-300 ease-in-out"
-      />
-    </>
-  );
-};
 
 const SkillDot = ({
   icon,
@@ -125,16 +89,7 @@ const ProfileImage = () => {
 const Hero = () => {
   return (
     <>
-      <section className="w-full h-screen text-primary-text">
-        <nav className="flex flex-row justify-between  p-10">
-          <NavMenu />
-
-          <div className="flex flex-row gap-3">
-            {icons.map((i) => (
-              <SocialIcons key={i.alt} icon={i.src} alt={i.alt} />
-            ))}
-          </div>
-        </nav>
+      <section className="w-full h-screen text-primary-text mt-10">
         <div className="flex flex-row items-center justify-around py-10 ">
           <div className="flex flex-col gap-10">
             <h2 className="text-6xl">Hi, I'm</h2>
