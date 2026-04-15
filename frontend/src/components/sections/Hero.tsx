@@ -31,7 +31,7 @@ const SkillDot = ({
 };
 const ProfileImage = () => {
   return (
-    <div className="relative flex items-center justify-center w-[320px] h-[320px] md:w-[450px] md:h-[450px] lg:w-[500px] lg:h-[500px] transition-all duration-500">
+    <div className="relative flex items-center justify-center w-[320px] h-[320px] md:w-[450px] md:h-[450px] xl:w-[500px] xl:h-[500px] transition-all duration-500">
       {/* Outer Circle */}
       <div className="absolute w-[100%] h-[100%] border border-black/10 md:border-black/20 rounded-full -mt-10 md:-mt-16">
         <div className="absolute h-full w-full animate-spin-cw rotate-90 ">
@@ -75,7 +75,7 @@ const ProfileImage = () => {
       </div>
 
       {/* Actual Profile Photo */}
-      <div className="relative z-10 overflow-hidden w-[220px] md:w-[350px] lg:w-auto -mb-20 md:-mb-28 -mr-5">
+      <div className="relative z-10 overflow-hidden w-[220px] md:w-[350px] xl:w-auto -mb-20 md:-mb-28 -mr-5">
         <img
           src={Profile}
           alt="Olive Menorah"
@@ -88,39 +88,42 @@ const ProfileImage = () => {
 
 const Hero = () => {
   return (
-    <section className="w-full min-h-screen flex items-center justify-center text-primary-text px-10  overflow-hidden">
-      <div className="flex flex-col lg:flex-row items-center justify-around w-full gap-10 ">
+    <section className="w-full min-h-screen flex items-center justify-center text-primary-text px-10 overflow-hidden">
+      <div className="flex flex-col xl:flex-row items-center justify-around w-full gap-10 ">
         {/* Left Side: Text Content */}
-        <div className="flex flex-col gap-6 md:gap-8 text-center lg:text-left items-center lg:items-start z-20">
-          <h2 className="text-4xl md:text-5xl lg:text-6xl font-medium">
+        <div className="flex flex-col gap-6 md:gap-8 text-center xl:text-left items-center xl:items-start z-20">
+          <h2 className="text-4xl md:text-5xl xl:text-6xl font-medium">
             Hi, I'm
           </h2>
 
           <div className="flex flex-col md:flex-row items-center gap-4">
-            <h1 className="text-5xl md:text-7xl lg:text-8xl  font-medium flex  flex-row ">
+            <h1 className="text-5xl md:text-7xl xl:text-8xl  font-medium flex  flex-row ">
               Olive Menorah{" "}
             </h1>
           </div>
 
-          <div className="flex flex-col gap-2 font-mono  tracking-tighter">
-            <p className="text-xl md:text-3xl lg:text-4xl  text-gray-500">
+          <div className="flex flex-col gap-2   tracking-tighter">
+            <p className="text-xl md:text-3xl xl:text-4xl  text-gray-500">
               &lt;Junior Software Engineer /&gt;
             </p>
-            <p className="text-xl md:text-3xl lg:text-4xl  text-gray-500">
+            <p className="text-xl md:text-3xl xl:text-4xl  text-gray-500">
               &lt;Full Stack Developer /&gt;
             </p>
           </div>
 
-          <div className="flex flex-wrap justify-center lg:justify-start gap-4 mt-4">
+          <div className="flex flex-wrap justify-center xl:justify-start gap-4 mt-4">
             <a href="#contact">
-              <Button size="lg" className="text-lg px-8 py-6 rounded-full">
+              <Button
+                size="lg"
+                className=" text-md xl:text-lg px-5 py-4 xl:px-8 xl:py-6 rounded-full"
+              >
                 Contact Me
               </Button>
             </a>
             <Button
               size="lg"
               variant="outline"
-              className="text-lg px-8 py-6 rounded-full"
+              className="text-md xl:text-lg px-5 py-4 xl:px-8 xl:py-6 rounded-full"
             >
               Download CV <Download className="ml-2 h-5 w-5" />
             </Button>
@@ -128,7 +131,7 @@ const Hero = () => {
         </div>
 
         {/* Right Side: Animated Image */}
-        <div className="flex items-center justify-center  w-full lg:w-1/3 mt-10 lg:mt-0">
+        <div className="flex items-center justify-center  w-full xl:w-1/3 mt-10 xl:mt-0">
           <ProfileImage />
         </div>
       </div>

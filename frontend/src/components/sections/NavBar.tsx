@@ -72,7 +72,7 @@ const SocialIcons = ({
         <img
           src={icon}
           alt={alt}
-          className="w-auto h-auto object-contain cursor-pointer hover:scale-105 hover:opacity-70 transition duration-300 ease-in-out"
+          className="w-8 h-8 object-contain cursor-pointer hover:scale-105 hover:opacity-70 transition duration-300 ease-in-out"
         />
       </a>
     </>
@@ -83,11 +83,11 @@ const NavBar = () => {
   return (
     <nav className="flex flex-row justify-between  p-10 bg-white/80 backdrop-blur-md sticky top-0 z-50 text-primary-text">
       {/*Mobile View */}
-      <div className="lg:hidden">
+      <div className="xl:hidden">
         <MobileNav />
       </div>
       {/*Desktop View*/}
-      <div className="hidden lg:block">
+      <div className="hidden xl:block">
         <NavigationMenu>
           <NavigationMenuList>
             <NavigationMenuItem></NavigationMenuItem>
@@ -172,38 +172,69 @@ const MobileNav = () => {
           <Menu className="h-6 w-6" />
         </button>
       </SheetTrigger>
-      <SheetContent side="left" className="w-[300px] bg-white">
+      <SheetContent side="left" className="w-[300px]  bg-white">
         <SheetHeader>
           <SheetTitle className="text-left text-2xl font-bold">Menu</SheetTitle>
         </SheetHeader>
-        <div className="mt-8 flex flex-col gap-6">
+        <div className="mt-8 ml-5 flex flex-col gap-6">
           <a
             href="#about-me"
             onClick={() => setOpen(false)}
-            className="text-lg font-medium"
+            className="text-md md:text-lg font-medium"
           >
             About Me
           </a>
           <a
+            href="#experience"
+            onClick={() => setOpen(false)}
+            className="text-md md:text-lg font-medium"
+          >
+            Professional Experience
+          </a>
+          <a
+            href="#skills"
+            onClick={() => setOpen(false)}
+            className="text-md md:text-lg font-medium"
+          >
+            Major Skills
+          </a>
+          <div className="h-px bg-border my-2" />
+
+          <a
             href="#programming-languages"
             onClick={() => setOpen(false)}
-            className="text-lg font-medium"
+            className="text-md md:text-lg font-medium"
           >
-            Tech Stack
+            Programming Languages
+          </a>
+          <a
+            href="#frontend-technologies"
+            onClick={() => setOpen(false)}
+            className="text-md md:text-lg font-medium"
+          >
+            Frontend Technologies
+          </a>
+          <a
+            href="#backend-and-database-technologies"
+            onClick={() => setOpen(false)}
+            className="text-md md:text-lg font-medium"
+          >
+            Backend & Database Technologies
           </a>
 
           <div className="h-px bg-border my-2" />
           <a
             href="#my-projects"
             onClick={() => setOpen(false)}
-            className="text-lg font-medium"
+            className="text-md md:text-lg font-medium"
           >
             My Projects
           </a>
+          <div className="h-px bg-border my-2" />
           <a
             href="#contact"
             onClick={() => setOpen(false)}
-            className="text-lg font-medium"
+            className="text-md md:text-lg font-medium"
           >
             Contact Me
           </a>

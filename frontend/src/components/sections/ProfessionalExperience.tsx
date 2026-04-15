@@ -11,17 +11,17 @@ const ProfessionalExperience = () => {
           <img
             src={entropy}
             alt="Entropy logo"
-            className="h-30 w-auto object-contain"
+            className="h-20 md:h-25 xl:h-30 w-auto object-contain"
           />
           <img
             src={geviton}
             alt="Geviton logo"
-            className="h-30 w-auto object-contain"
+            className="h-20 md:h-25 xl:h-30 w-auto object-contain"
           />
           <img
             src={schooltry}
             alt="SchoolTry logo"
-            className="h-30 w-auto object-contain"
+            className="h-20 md:h-25 xl:h-30 w-auto object-contain"
           />
         </div>
       </Layout>

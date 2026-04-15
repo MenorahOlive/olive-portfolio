@@ -16,7 +16,7 @@ const skills = [
 const SkillsList = ({ skill }: { skill: string }) => {
   return (
     <>
-      <div className="py-5 px-auto text-2xl text-secondary-text bg-background-card rounded-2xl flex items-center justify-center ">
+      <div className="py-3 md:py-4 xl:py-5 px-auto text-lg xl:text-2xl text-secondary-text bg-background-card rounded-2xl flex items-center justify-center ">
         {skill}
       </div>
     </>
@@ -27,11 +27,11 @@ const MajorSkills = () => {
   return (
     <>
       <Layout title="Major Skills" id="skills">
-        <div className="grid gap-3  grid-cols-2 lg:grid-cols-3 w-[90%]">
+        <div className="grid gap-3 grid-cols-1 md:grid-cols-2 xl:grid-cols-3 w-[90%]">
           {skills.map((s, index) => {
             const isLast = index === skills.length - 1;
             return (
-              <div key={index} className={isLast ? "lg:col-span-3" : ""}>
+              <div key={index} className={isLast ? "xl:col-span-3" : ""}>
                 {" "}
                 <SkillsList skill={s} />
               </div>

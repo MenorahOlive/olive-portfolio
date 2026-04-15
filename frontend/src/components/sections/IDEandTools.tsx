@@ -3,7 +3,7 @@ import Layout from "../Layout/Layout";
 const InfoBar = ({ text }: { text: string }) => {
   return (
     <>
-      <p className="py-5 px-auto text-2xl text-secondary-text bg-background-card rounded-2xl flex items-center justify-center ">
+      <p className="py-3 md:py-4 xl:py-5 px-auto text-lg xl:text-2xl text-secondary-text bg-background-card rounded-2xl flex items-center justify-center ">
         {text}
       </p>
     </>
@@ -30,11 +30,11 @@ const IDEandTools = () => {
   return (
     <>
       <Layout title="IDE & Tools" id="ide-and-tools">
-        <div className="grid grid-cols-3 gap-3 w-[90%]">
+        <div className="grid grid-cols-1  md:grid-cols-2 xl:grid-cols-3 gap-3 w-[90%]">
           {tools.map((t, index) => {
             const isLast = index === tools.length - 1;
             return (
-              <div key={index} className={isLast ? "col-span-3" : ""}>
+              <div key={index} className={isLast ? "xl:col-span-3" : ""}>
                 <InfoBar text={t} />
               </div>
             );

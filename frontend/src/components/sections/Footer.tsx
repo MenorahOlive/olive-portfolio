@@ -3,34 +3,43 @@ import { ArrowRight } from "lucide-react";
 import Form from "./Form";
 
 const Footer = () => {
+  const currentYear = new Date().getFullYear();
+
   return (
     <>
-      <footer
-        id="contact"
-        className="bg-background-card text-primary-text w-full h-auto p-20 flex flex-col lg:flex-row justify-around items-start gap-10"
-      >
-        <div className=" flex flex-col gap-6 h-full ">
-          {" "}
-          <h3 className="text-7xl">
+      <footer id="contact">
+        <div className="bg-background-card text-primary-text w-full h-auto py-15 px-5 flex flex-col xl:flex-row justify-around items-center xl:items-start gap-10">
+          <div className=" flex text-center xl:text-start flex-col w-auto items-center xl:items-start justify-center xl:justify-start gap-4 md:gap-5 xl:gap-6 h-full ">
             {" "}
-            Get in - <br /> touch with me{" "}
-          </h3>
-          <p className="text-2xl">
-            If you have any questions. Feel free to reach out.
-          </p>
-          <p className="text-2xl">Email:</p>
-          <p className="text-2xl font-bold">olivemenorah@gmail.com</p>
-          <p className="text-2xl">Phone:</p>
-          <p className="text-2xl font-bold">+254 715 312 448</p>
-          <p>Available Monday to Friday, 9AM - 5PM EAT</p>
-          <Button size="lg" className="w-fit mt-5">
-            Live Chat{" "}
-            <div className="bg-white p-1 rounded-full">
-              <ArrowRight className="text-black"></ArrowRight>
-            </div>
-          </Button>
+            <h3 className="text-5xl md:text-6xl xl:text-7xl ">
+              {" "}
+              Get in - <br /> touch with me{" "}
+            </h3>
+            <p className="text-xl md:text-2xl">
+              If you have any questions. Feel free to reach out.
+            </p>
+            <p className="text-xl md:text-2xl">Email:</p>
+            <p className="text-xl md:text-2xl font-bold">
+              olivemenorah@gmail.com
+            </p>
+            <p className="text-xl md:text-2xl">Phone:</p>
+            <p className="text-xl md:text-2xl font-bold">+254 715 312 448</p>
+            <p>Available Monday to Friday, 9AM - 5PM EAT</p>
+            <Button
+              size="lg"
+              className="w-fit mt-5  text-md xl:text-lg px-5 py-4 xl:px-8 xl:py-6 rounded-full"
+            >
+              Live Chat{" "}
+              <div className="bg-white p-1 rounded-full">
+                <ArrowRight className="text-black"></ArrowRight>
+              </div>
+            </Button>
+          </div>
+          <Form />
         </div>
-        <Form />
+        <div className="bg-primary-text w-full h-10 text-background-card flex justify-center items-center">
+          ©{currentYear}. OliveMenorah. All Rights Reserved
+        </div>
       </footer>
     </>
   );

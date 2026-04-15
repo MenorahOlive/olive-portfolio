@@ -163,8 +163,13 @@ const Form = () => {
             )}
           />
 
-          <div className="flex justify-end pt-4">
-            <Button type="submit" disabled={isPending} size="lg">
+          <div className="flex justify-start md:justify-end pt-4">
+            <Button
+              type="submit"
+              disabled={isPending}
+              size="lg"
+              className=" text-md xl:text-lg px-5 py-4 xl:px-8 xl:py-6 rounded-full "
+            >
               <span className="text-lg font-medium">
                 {isPending ? "Sending..." : "Send Message"}
               </span>
