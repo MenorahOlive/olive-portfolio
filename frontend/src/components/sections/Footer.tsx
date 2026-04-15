@@ -7,11 +7,12 @@ const Footer = () => {
     <>
       <footer
         id="contact"
-        className="bg-background-card text-primary-text w-full h-auto p-20 flex flex-row justify-around items-start gap-10"
+        className="bg-background-card text-primary-text w-full h-auto p-20 flex flex-col lg:flex-row justify-around items-start gap-10"
       >
         <div className=" flex flex-col gap-6 h-full ">
           {" "}
           <h3 className="text-7xl">
+            {" "}
             Get in - <br /> touch with me{" "}
           </h3>
           <p className="text-2xl">

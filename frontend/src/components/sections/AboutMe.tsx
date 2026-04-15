@@ -17,10 +17,10 @@ const AboutMe = () => {
     <>
       <section id="about-me" className="w-full h-auto p-10 text-primary-text">
         <div className="flex flex-col gap-30 justify-center items-center">
-          <div className="flex flex-row justify-around items-center gap-20">
-            <div className="w-[50%]  flex flex-col gap-10">
+          <div className="flex flex-col lg:flex-row justify-around items-center gap-20">
+            <div className="w-[80%] lg:w-[50%]  flex flex-col gap-10 items-center justify-center lg:items-start text-center lg:text-start">
               <h3 className="font-bold text-4xl">About Me</h3>
-              <p className="text-2xl text-secondary-text">
+              <p className="text-2xl text-secondary-text ">
                 I am a{" "}
                 <span className="text-primary-text ">
                   Full Stack Software Engineer

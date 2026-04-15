@@ -51,7 +51,7 @@ const ProgrammingLanguages = () => {
   return (
     <>
       <Layout title="Programming Languages" id="programming-languages">
-        <div className="flex w-[90%] flex-row gap-10 justify-around items-center">
+        <div className="flex w-[90%] flex-row flex-wrap gap-10 justify-around items-center">
           {languages.map((l, index) => (
             <InfoCard key={index} icon={l.src} text={l.alt} />
           ))}

@@ -16,7 +16,9 @@ const skills = [
 const SkillsList = ({ skill }: { skill: string }) => {
   return (
     <>
-      <div className="p-10 w-90 text-2xl text-secondary-text">{skill}</div>
+      <div className="py-5 px-auto text-2xl text-secondary-text bg-background-card rounded-2xl flex items-center justify-center ">
+        {skill}
+      </div>
     </>
   );
 };
@@ -25,10 +27,16 @@ const MajorSkills = () => {
   return (
     <>
       <Layout title="Major Skills" id="skills">
-        <div className="flex flex-wrap w-[90%]">
-          {skills.map((s, index) => (
-            <SkillsList key={index} skill={s} />
-          ))}
+        <div className="grid gap-3  grid-cols-2 lg:grid-cols-3 w-[90%]">
+          {skills.map((s, index) => {
+            const isLast = index === skills.length - 1;
+            return (
+              <div key={index} className={isLast ? "lg:col-span-3" : ""}>
+                {" "}
+                <SkillsList skill={s} />
+              </div>
+            );
+          })}
         </div>
       </Layout>
     </>

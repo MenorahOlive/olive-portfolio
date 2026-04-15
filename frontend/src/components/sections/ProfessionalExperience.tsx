@@ -7,7 +7,7 @@ const ProfessionalExperience = () => {
   return (
     <>
       <Layout title="Professional Experience" id="experience">
-        <div className="flex flex-row w-full items-center justify-around  pb-10">
+        <div className="flex flex-row flex-wrap w-full items-center justify-around  pb-10">
           <img
             src={entropy}
             alt="Entropy logo"
