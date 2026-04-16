@@ -24,8 +24,8 @@ const icons = [
 const InfoCard = ({ icon, text }: { icon: any; text: string }) => {
   return (
     <>
-      <div className="flex flex-col gap-3 justify-center items-center">
-        <div className="bg-background-card w-25 h-30 md:w-35 xl:w-40 md:h-40 xl:h-50 rounded-2xl p-5 flex flex-col gap-5 md:gap-8 xl:gap-10 justify-start items-center">
+      <div className="flex flex-col gap-5 justify-center items-center">
+        <div className="bg-background-card w-25 h-30 md:w-35 xl:w-40 md:h-40 xl:h-50 rounded-2xl p-5 flex flex-col gap-5 md:gap-8 xl:gap-10 justify-start items-center hover:animate-wiggle  shadow-md origin-top transition-transform duration-500 ease-out cursor-pointer hover:scale-105">
           <div className="h-1 md:h-2 xl:h-3 w-10  md:w-12 xl:w-15 bg-white rounded-full"></div>
           <img
             src={icon}

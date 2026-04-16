@@ -33,6 +33,7 @@
 
   --animate-spin-cw: rotate-cw 45s linear infinite;
   --animate-spin-ccw: rotate-ccw 45s linear infinite;
+  --animate-wiggle: wiggle 5s ease-in-out forwards;
 }
 
 @keyframes rotate-cw {
@@ -49,6 +50,33 @@
   }
   to {
     transform: rotate(-360deg);
+  }
+}
+@keyframes wiggle {
+  0%,
+  100% {
+    transform: rotate(0deg);
+  }
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: rotate(-3deg);
+  }
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: rotate(3deg);
+  }
+}
+
+@layer base {
+  /* This ensures the card "eases" back to 0 degrees when the mouse leaves */
+  .info-card-wiggle {
+    transition: transform 0.6s cubic-bezier(0.34, 1.56, 0.64, 1);
+    transform: rotate(0deg);
   }
 }
 
