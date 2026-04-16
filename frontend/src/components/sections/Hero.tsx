@@ -33,7 +33,7 @@ const ProfileImage = () => {
   return (
     <div className="relative flex items-center justify-center w-[320px] h-[320px] md:w-[450px] md:h-[450px] xl:w-[500px] xl:h-[500px] transition-all duration-500">
       {/* Outer Circle */}
-      <div className="absolute w-[100%] h-[100%] border border-black/10 md:border-black/20 rounded-full -mt-10 md:-mt-16">
+      <div className="absolute w-[100%] h-[100%] border border-black/10 md:border-black/20 rounded-full  -mt-10 md:-mt-16 ">
         <div className="absolute h-full w-full animate-spin-cw rotate-90 ">
           <div className="absolute top-1/4 left-0 -mt-2">
             <SkillDot icon={React} alt="react" colour="bg-pink-500/10" />
@@ -88,7 +88,7 @@ const ProfileImage = () => {
 
 const Hero = () => {
   return (
-    <section className="w-full min-h-screen flex items-center justify-center text-primary-text px-10 overflow-hidden">
+    <section className="w-full min-h-screen flex items-center justify-center text-primary-text px-10  lg:-mt-20 overflow-hidden">
       <div className="flex flex-col xl:flex-row items-center justify-around w-full gap-10 ">
         {/* Left Side: Text Content */}
         <div className="flex flex-col gap-6 md:gap-8 text-center xl:text-left items-center xl:items-start z-20">
@@ -131,7 +131,7 @@ const Hero = () => {
         </div>
 
         {/* Right Side: Animated Image */}
-        <div className="flex items-center justify-center  w-full xl:w-1/3 mt-10 xl:mt-0">
+        <div className="flex items-center justify-center  w-full xl:w-1/3 mt-10">
           <ProfileImage />
         </div>
       </div>

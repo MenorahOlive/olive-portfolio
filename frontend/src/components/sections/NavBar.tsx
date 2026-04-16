@@ -81,7 +81,7 @@ const SocialIcons = ({
 
 const NavBar = () => {
   return (
-    <nav className="flex flex-row justify-between  p-10 bg-white/80 backdrop-blur-md sticky top-0 z-50 text-primary-text">
+    <nav className="flex flex-row justify-between p-5 lg:p-10 bg-white/80 backdrop-blur-md sticky w-full top-0 z-50 text-primary-text">
       {/*Mobile View */}
       <div className="xl:hidden">
         <MobileNav />

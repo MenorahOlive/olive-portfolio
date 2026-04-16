@@ -25,15 +25,22 @@ const Footer = () => {
             <p className="text-xl md:text-2xl">Phone:</p>
             <p className="text-xl md:text-2xl font-bold">+254 715 312 448</p>
             <p>Available Monday to Friday, 9AM - 5PM EAT</p>
-            <Button
-              size="lg"
-              className="w-fit mt-5  text-md xl:text-lg px-5 py-4 xl:px-8 xl:py-6 rounded-full"
+            <a
+              href="https://wa.me/254715312448?text=Hi%20Olive!%20I'm%20reaching%20out%20from%20your%20portfolio.%20I'd%20like%20to%20chat%20about..."
+              target="_blank"
+              rel="noopener noreferrer"
             >
-              Live Chat{" "}
-              <div className="bg-white p-1 rounded-full">
-                <ArrowRight className="text-black"></ArrowRight>
-              </div>
-            </Button>
+              {" "}
+              <Button
+                size="lg"
+                className="w-fit mt-5  text-md xl:text-lg px-5 py-4 xl:px-8 xl:py-6 rounded-full"
+              >
+                Live Chat{" "}
+                <div className="bg-white p-1 rounded-full">
+                  <ArrowRight className="text-black"></ArrowRight>
+                </div>
+              </Button>
+            </a>
           </div>
           <Form />
         </div>
