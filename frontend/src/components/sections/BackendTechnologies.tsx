@@ -55,6 +55,7 @@ const BackendTechnologies = () => {
               src={Coding}
               alt="Image of a robot"
               className="w-full h-auto object-cover  rounded-full aspect-square  "
+              loading="lazy"
             />
           </div>
 

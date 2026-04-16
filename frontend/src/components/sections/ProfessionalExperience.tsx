@@ -1,6 +1,6 @@
-import entropy from "../../assets/entropy.png";
-import geviton from "../../assets/geviton.png";
-import schooltry from "../../assets/schooltry.png";
+import entropy from "../../assets/entropy.webp";
+import geviton from "../../assets/geviton.webp";
+import schooltry from "../../assets/schooltry.webp";
 import Layout from "../Layout/Layout";
 
 const ProfessionalExperience = () => {

@@ -1,9 +1,9 @@
 import Layout from "../Layout/Layout";
 import { Button } from "../ui/button";
-import knclegal from "../../assets/knclegal.png";
-import leadwell from "../../assets/leadwell.png";
-import neotechnic from "../../assets/neotechnic.png";
-import penparalegal from "../../assets/penparalegal.png";
+import knclegal from "../../assets/knclegal.webp";
+import leadwell from "../../assets/leadwell.webp";
+import neotechnic from "../../assets/neotechnic.webp";
+import penparalegal from "../../assets/penparalegal.webp";
 import { MoveUpRight } from "lucide-react";
 import { useState } from "react";
 import { toast } from "sonner";
@@ -63,6 +63,7 @@ const InfoCard = ({
           <img
             src={screenshot}
             alt={text}
+            loading="lazy"
             className="w-full h-full object-cover grayscale-[50%] group-hover:grayscale-0 group-hover:scale-110 transition-all duration-500"
           />
         </div>

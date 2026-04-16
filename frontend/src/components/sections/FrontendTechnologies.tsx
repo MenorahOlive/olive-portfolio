@@ -1,5 +1,5 @@
 import Layout from "../Layout/Layout";
-import Robot from "../../assets/robot.png";
+import Robot from "../../assets/robot.webp";
 import React from "../../assets/react.svg";
 import Astro from "../../assets/astro.svg";
 import Bootstrap from "../../assets/bootstrap.svg";
@@ -36,6 +36,7 @@ const InfoCard = ({ icon, text }: { icon: any; text: string }) => {
             src={icon}
             alt={text}
             className=" object-contain w-10 md:w-15 xl:w-20 h-auto"
+            loading="lazy"
           />
         </div>
         <p className="text-secondary-text text-xl md:text-2xl max-w-[7ch] text-center">

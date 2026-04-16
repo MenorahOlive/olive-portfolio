@@ -1,4 +1,4 @@
-import Profile from "../../assets/profile-img.png";
+import Profile from "../../assets/profile-img.webp";
 import Html from "../../assets/html.svg";
 import CSS from "../../assets/css.svg";
 import JS from "../../assets/javascript.svg";
@@ -23,7 +23,12 @@ const SkillDot = ({
         className={`w-8 h-8 md:w-12 md:h-12 ${colour} rounded-full shadow-md flex items-center justify-center p-1.5 md:p-2`}
       >
         <div className="w-full h-full animate-spin-ccw flex items-center justify-center">
-          <img src={icon} alt={alt} className="w-full h-full object-contain" />
+          <img
+            src={icon}
+            alt={alt}
+            className="w-full h-full object-contain "
+            loading="eager"
+          />
         </div>
       </div>
     </div>
@@ -75,11 +80,12 @@ const ProfileImage = () => {
       </div>
 
       {/* Actual Profile Photo */}
-      <div className="relative z-10 overflow-hidden w-[220px] md:w-[350px] xl:w-auto -mb-20 md:-mb-28 -mr-5">
+      <div className="relative z-10 overflow-hidden w-[220px] md:w-[350px] xl:w-auto -mb-20 md:-mb-28 xl:-mb-35 -mr-5">
         <img
           src={Profile}
           alt="Olive Menorah"
           className="w-full h-full object-cover"
+          loading="eager"
         />
       </div>
     </div>

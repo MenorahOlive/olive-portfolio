@@ -1,8 +1,8 @@
 "use client";
-import Email from "../../assets/Email.png";
-import GitHub from "../../assets/GitHub.png";
-import Phone from "../../assets/Phone.png";
-import LinkedIn from "../../assets/LinkedIn.png";
+import Email from "../../assets/Email.webp";
+import GitHub from "../../assets/GitHub.webp";
+import Phone from "../../assets/Phone.webp";
+import LinkedIn from "../../assets/LinkedIn.webp";
 import {
   NavigationMenu,
   NavigationMenuContent,
