@@ -9,10 +9,12 @@ import BackendTechnologies from "./components/sections/BackendTechnologies";
 import IDEandTools from "./components/sections/IDEandTools";
 import Projects from "./components/sections/Projects";
 import Footer from "./components/sections/Footer";
+import { Toaster } from "sonner";
 
 function App() {
   return (
     <>
+      <Toaster position="top-center" richColors />
       <NavBar />
       <Hero />
       <AboutMe />
