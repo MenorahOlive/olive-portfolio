@@ -120,13 +120,19 @@ const Hero = () => {
                 Contact Me
               </Button>
             </a>
-            <Button
-              size="lg"
-              variant="outline"
-              className="text-md xl:text-lg px-5 py-4 xl:px-8 xl:py-6 rounded-full"
+            <a
+              href="../../../public/Olive_Menorah_CV.pdf"
+              download="Olive_Menorah_CV.pdf"
             >
-              Download CV <Download className="ml-2 h-5 w-5" />
-            </Button>
+              {" "}
+              <Button
+                size="lg"
+                variant="outline"
+                className="text-md xl:text-lg px-5 py-4 xl:px-8 xl:py-6 rounded-full"
+              >
+                Download CV <Download className="ml-2 h-5 w-5" />
+              </Button>
+            </a>
           </div>
         </div>
 
