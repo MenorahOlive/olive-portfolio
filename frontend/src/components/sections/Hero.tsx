@@ -1,6 +1,7 @@
 import Profile from "../../assets/profile-img.webp";
 import Html from "../../assets/html.svg";
 import CSS from "../../assets/css.svg";
+import CV from "../../assets/Olive_Menorah_CV.pdf";
 import JS from "../../assets/javascript.svg";
 import nodeJS from "../../assets/node-js.svg";
 import git from "../../assets/git.svg";
@@ -126,10 +127,7 @@ const Hero = () => {
                 Contact Me
               </Button>
             </a>
-            <a
-              href="/Olive_Menorah_Resume.pdf"
-              download="Olive_Menorah_Resume.pdf"
-            >
+            <a href={CV} download="Olive_Menorah_CV.pdf">
               {" "}
               <Button
                 size="lg"
