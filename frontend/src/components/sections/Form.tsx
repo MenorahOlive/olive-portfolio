@@ -168,7 +168,7 @@ const Form = () => {
               type="submit"
               disabled={isPending}
               size="lg"
-              className=" text-md xl:text-lg px-5 py-4 xl:px-8 xl:py-6 rounded-full "
+              className=" text-md xl:text-lg px-5 py-4 xl:px-8 xl:py-6 rounded-full cursor-pointer "
             >
               <span className="text-lg font-medium">
                 {isPending ? "Sending..." : "Send Message"}

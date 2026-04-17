@@ -121,7 +121,7 @@ const Hero = () => {
             <a href="#contact">
               <Button
                 size="lg"
-                className=" text-md xl:text-lg px-5 py-4 xl:px-8 xl:py-6 rounded-full"
+                className=" text-md xl:text-lg px-5 py-4 xl:px-8 xl:py-6 rounded-full cursor-pointer"
               >
                 Contact Me
               </Button>
@@ -134,7 +134,7 @@ const Hero = () => {
               <Button
                 size="lg"
                 variant="outline"
-                className="text-md xl:text-lg px-5 py-4 xl:px-8 xl:py-6 rounded-full"
+                className="text-md xl:text-lg px-5 py-4 xl:px-8 xl:py-6 rounded-full hover:border-secondary-text hover:border cursor-pointer"
               >
                 Download CV <Download className="ml-2 h-5 w-5" />
               </Button>

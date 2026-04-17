@@ -33,7 +33,7 @@ const Footer = () => {
               {" "}
               <Button
                 size="lg"
-                className="w-fit mt-5  text-md xl:text-lg px-5 py-4 xl:px-8 xl:py-6 rounded-full"
+                className="w-fit mt-5  text-md xl:text-lg px-5 py-4 xl:px-8 xl:py-6 rounded-full cursor-pointer"
               >
                 Live Chat{" "}
                 <div className="bg-white p-1 rounded-full">
