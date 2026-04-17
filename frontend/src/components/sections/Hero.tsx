@@ -127,8 +127,8 @@ const Hero = () => {
               </Button>
             </a>
             <a
-              href="../../../public/Olive_Menorah_CV.pdf"
-              download="Olive_Menorah_CV.pdf"
+              href="../../../public/Olive_Menorah_Resume.pdf"
+              download="Olive_Menorah_Resume.pdf"
             >
               {" "}
               <Button
